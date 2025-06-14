@@ -46,7 +46,7 @@ export default function RecruitSection() {
             {/* 見出し */}
             <div
                 ref={headingRef}
-                className={`transition-all duration-1000 transform ${headingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                className={`transition-all duration-[1500ms] transform ${headingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
                 <h2 className="text-red-700 text-4xl font-bold mb-2">Recruit</h2>
                 <p className="text-sm text-gray-500 mb-10">採用情報</p>
@@ -55,7 +55,7 @@ export default function RecruitSection() {
             {/* 採用カード */}
             <div
                 ref={cardRef}
-                className={`flex justify-center mb-20 transition-all duration-1000 transform ${cardVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                className={`flex justify-center mb-20 transition-all duration-[1500ms] transform ${cardVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
                 <div className="relative max-w-10xl">
                     <div className="w-[500px] ml-[-500px]">

@@ -64,7 +64,7 @@ export default function ServicesSection() {
                 {/* 左：見出し */}
                 <div
                     ref={headingRef}
-                    className={`md:w-[30%] w-full mb-8 md:mb-0 flex-shrink-0 transition-all duration-1000 transform ${headingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                    className={`md:w-[30%] w-full mb-8 md:mb-0 flex-shrink-0 transition-all duration-[1500ms] transform ${headingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
                     <h2 className="text-red-700 text-4xl font-bold mb-1">Services</h2>
                     <p className="text-xs text-gray-500 mb-6">診療・サービス案内</p>
@@ -81,7 +81,7 @@ export default function ServicesSection() {
                                 ref={(el) => {
                                     cardRefs.current[i] = el;
                                 }}
-                                className={`bg-white rounded flex flex-col items-start w-full transition-all duration-1000 transform ${visibleCards[i] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                                className={`bg-white rounded flex flex-col items-start w-full transition-all duration-[1500ms] transform ${visibleCards[i] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                                     }`}
                             >
                                 <Image src={s.img} alt={s.title} width={260} height={260} className="rounded mb-3 w-full h-[260px] object-cover" />
@@ -105,7 +105,7 @@ export default function ServicesSection() {
                                     ref={(el) => {
                                         cardRefs.current[idx] = el;
                                     }}
-                                    className={`bg-white rounded flex flex-col items-start w-full transition-all duration-1000 transform ${visibleCards[idx] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                                    className={`bg-white rounded flex flex-col items-start w-full transition-all duration-[1500ms] transform ${visibleCards[idx] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                                         }`}
                                 >
                                     <Image src={s.img} alt={s.title} width={140} height={90} className="rounded mb-3 w-full object-cover" />

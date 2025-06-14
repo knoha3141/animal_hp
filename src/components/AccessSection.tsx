@@ -52,7 +52,7 @@ export default function AccessSection() {
             {/* 見出し */}
             <div
                 ref={headingRef}
-                className={`transition-all duration-1000 transform ${headingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                className={`transition-all duration-[1500ms] transform ${headingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
                 <h2 className="text-red-700 text-4xl font-bold mb-2">Access</h2>
                 <p className="text-sm text-gray-500 mb-10">病院案内</p>
@@ -62,7 +62,7 @@ export default function AccessSection() {
             <div
                 data-index={0}
                 ref={(el) => { itemRefs.current[0] = el; }}
-                className={`transition-all duration-1000 transform ${visibleItems[0] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                className={`transition-all duration-[1500ms] transform ${visibleItems[0] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
                 {/* Google Map */}
                 <div className="w-full h-[400px] mb-12 relative">
@@ -86,7 +86,7 @@ export default function AccessSection() {
                     <div
                         data-index={1}
                         ref={(el) => { itemRefs.current[1] = el; }}
-                        className={`transition-all duration-1000 transform ${visibleItems[1] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                        className={`transition-all duration-[1500ms] transform ${visibleItems[1] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                     >
                         <h3 className="font-bold text-black mb-2">住所</h3>
                         <p className="text-black">
@@ -99,7 +99,7 @@ export default function AccessSection() {
                     <div
                         data-index={2}
                         ref={(el) => { itemRefs.current[2] = el; }}
-                        className={`transition-all duration-1000 transform ${visibleItems[2] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                        className={`transition-all duration-[1500ms] transform ${visibleItems[2] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                     >
                         <h3 className="font-bold text-black mb-2">電話番号</h3>
                         <p className="text-black">
@@ -113,7 +113,7 @@ export default function AccessSection() {
                     <div
                         data-index={3}
                         ref={(el) => { itemRefs.current[3] = el; }}
-                        className={`transition-all duration-1000 transform ${visibleItems[3] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                        className={`transition-all duration-[1500ms] transform ${visibleItems[3] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                     >
                         <h3 className="font-bold text-black ">診療受付時間</h3>
                         <div className="w-full mb-4">
@@ -174,7 +174,7 @@ export default function AccessSection() {
                     <div
                         data-index={4}
                         ref={(el) => { itemRefs.current[4] = el; }}
-                        className={`mt-12 transition-all duration-1000 transform ${visibleItems[4] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                        className={`mt-12 transition-all duration-[1500ms] transform ${visibleItems[4] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                     >
                         <h3 className="font-bold text-black mb-4">診療対象</h3>
                         <div className="flex flex-wrap gap-10 justify-start">
@@ -206,7 +206,7 @@ export default function AccessSection() {
                 <div
                     data-index={5}
                     ref={(el) => { itemRefs.current[5] = el; }}
-                    className={`md:col-span-5 transition-all duration-1000 transform ${visibleItems[5] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                    className={`md:col-span-5 transition-all duration-[1500ms] transform ${visibleItems[5] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
                     <div className="mb-8">
                         <h3 className="font-bold text-black mb-2">駐車場</h3>

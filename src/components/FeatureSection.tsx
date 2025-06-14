@@ -72,7 +72,7 @@ export default function FeatureSection() {
         <section className="bg-gray-100 py-20 px-20">
             <div
                 ref={headingRef}
-                className={`transition-all duration-1000 transform ${headingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                className={`transition-all duration-[1500ms] transform ${headingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             >
                 <h2 className="text-red-700 text-4xl font-bold mb-1">Feature</h2>
                 <p className="text-xs text-gray-500 mb-4">特徴</p>
@@ -85,7 +85,7 @@ export default function FeatureSection() {
                         ref={(el) => {
                             itemRefs.current[idx] = el;
                         }}
-                        className={`transition-all duration-1000 transform ${visible[idx] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                        className={`transition-all duration-[1500ms] transform ${visible[idx] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                             }`}
                     >
                         <div className="flex items-center mb-2 border-b border-gray-200 pb-2">

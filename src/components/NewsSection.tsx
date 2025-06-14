@@ -52,7 +52,7 @@ export default function NewsSection() {
         <section className="bg-gray-50 py-20 px-20 text-black">
             <div className="flex flex-col md:flex-row justify-between items-start w-full">
                 {/* 左：見出し */}
-                <div className={`md:w-2/12 w-full flex flex-col items-start order-1 md:order-1 mb-4 md:mb-0 transition-all duration-1000 transform ${visibleItems.some(Boolean) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`md:w-2/12 w-full flex flex-col items-start order-1 md:order-1 mb-4 md:mb-0 transition-all duration-[1500ms] transform ${visibleItems.some(Boolean) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <h2 className="text-red-700 text-4xl font-bold mb-1">News</h2>
                     <p className="text-xs text-gray-500 mb-4">お知らせ</p>
                 </div>
@@ -66,7 +66,7 @@ export default function NewsSection() {
                                 ref={(el) => {
                                     itemRefs.current[index] = el;
                                 }}
-                                className={`news-item flex justify-between py-6 px-8 border-b last:border-b-0 transition-all duration-1000 transform ${visibleItems[index]
+                                className={`news-item flex justify-between py-6 px-8 border-b last:border-b-0 transition-all duration-[1500ms] transform ${visibleItems[index]
                                     ? "opacity-100 translate-y-0"
                                     : "opacity-0 translate-y-8"
                                     }`}
@@ -80,7 +80,7 @@ export default function NewsSection() {
                             </li>
                         ))}
                     </ul>
-                    <div className="text-right mt-2 transition-opacity duration-1000" style={{ opacity: visibleItems.some(Boolean) ? 1 : 0 }}>
+                    <div className="text-right mt-2 transition-opacity duration-[1500ms]" style={{ opacity: visibleItems.some(Boolean) ? 1 : 0 }}>
                         <a href="#" className="text-red-700 underline">
                             View More
                         </a>

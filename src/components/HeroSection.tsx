@@ -20,13 +20,13 @@ export default function HeroSection() {
             setCurrentImageIndex((prevIndex) =>
                 prevIndex === images.length - 1 ? 0 : prevIndex + 1
             );
-        }, 8000);
+        }, 3000);
 
         return () => clearInterval(timer);
     }, []);
 
     return (
-        <section className={`bg-gray-100 py-50 flex justify-center transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+        <section className={`bg-gray-100 py-50 flex justify-center transition-opacity duration-[1500ms] ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
             <div className="relative flex justify-center items-center max-w-4xl w-full h-[500px]">
                 {/* メインビジュアル */}
                 <div className="w-[600px] h-[500px] relative">
@@ -36,7 +36,7 @@ export default function HeroSection() {
                             src={src}
                             alt="メインビジュアル"
                             fill
-                            className={`rounded object-cover transition-opacity duration-1000 ${currentImageIndex === index ? "opacity-100" : "opacity-0"
+                            className={`rounded object-cover transition-opacity duration-[1500ms] ${currentImageIndex === index ? "opacity-100" : "opacity-0"
                                 }`}
                             priority={index === 0}
                             sizes="600px"
@@ -44,7 +44,7 @@ export default function HeroSection() {
                     ))}
                 </div>
                 {/* キャッチコピー（左側に被せる） */}
-                <div className={`absolute left-[-80px] top-1/2 -translate-y-1/2 md:w-80 w-56 p-4 rounded flex flex-col items-end transition-transform duration-1000 ${isLoaded ? 'translate-x-0' : '-translate-x-20'}`}>
+                <div className={`absolute left-[-80px] top-1/2 -translate-y-1/2 md:w-80 w-56 p-4 rounded flex flex-col items-end transition-transform duration-[1500ms] ${isLoaded ? 'translate-x-0' : '-translate-x-20'}`}>
                     <p className="text-black font-bold text-base md:text-xl leading-relaxed whitespace-pre-line text-left tracking-widest">
                         何より深い愛情と信頼を大切に、
                         ペットとご家族に寄り添った診療を行います。
@@ -52,7 +52,7 @@ export default function HeroSection() {
                     <p className="text-gray-500 text-xs md:text-sm mt-2">Caring for Your Pet, With Deep Love and Trust.</p>
                 </div>
                 {/* ロゴ（右側に被せる） */}
-                <div className={`absolute right-[-100px] top-1/2 -translate-y-1/2 p-2 rounded flex items-center transition-transform duration-1000 ${isLoaded ? 'translate-x-0' : '-translate-x-20'}`}>
+                <div className={`absolute right-[-100px] top-1/2 -translate-y-1/2 p-2 rounded flex items-center transition-transform duration-[1500ms] ${isLoaded ? 'translate-x-0' : '-translate-x-20'}`}>
                     <Image
                         src="/images/logo.png"
                         alt="ロゴ"
